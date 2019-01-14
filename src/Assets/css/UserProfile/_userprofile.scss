@@ -8,3 +8,10 @@
 .user-card {
   box-shadow: 0 2px 1px rgba(0,0,0,.05);
 }
+
+.list-group-item.active {
+  background: #1A2980;
+  background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+  background: linear-gradient(to right, #26D0CE, #1A2980);
+  border-color: snow;
+}

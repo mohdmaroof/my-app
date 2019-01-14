@@ -8,7 +8,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-	DropdownItem } from 'reactstrap';
+  DropdownItem,
+  Container } from 'reactstrap';
 import PropTypes from 'prop-types';
 import maroof from '../../Assets/img/maroof.jpg'
 
@@ -28,26 +29,30 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
-        <Navbar color="white" light expand="md">
-          <NavbarBrand href="/"><h6 className='mb-0'>{this.props.brandName}</h6></NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  <img src={maroof} className='user-img' alt='User Profile' />
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Sign Out
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      <React.Fragment>
+        <div className='bg-white'>
+          <Container>
+            <Navbar className='px-0 py-0' light expand='md'>
+              <NavbarBrand href='/'><h6 className='mb-0 text-capitalize'>{this.props.brandName}</h6></NavbarBrand>
+              <NavbarToggler onClick={this.toggle} />
+              <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className='ml-auto' navbar>
+                  <UncontrolledDropdown nav inNavbar>
+                    <DropdownToggle nav caret>
+                      <img src={maroof} className='user-img' alt='User Profile' />
+                    </DropdownToggle>
+                    <DropdownMenu right>
+                      <DropdownItem>
+                        Sign Out
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </Container>
+        </div>
+      </React.Fragment>
     );
 	}
 }
