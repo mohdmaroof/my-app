@@ -25,7 +25,7 @@ export default class Skills extends Component {
           <ListGroupItem tag="button" action>
           <span className='text-info'>BACKEND:</span> -Node.Js, PHP
           </ListGroupItem>
-          <ListGroupItem disabled tag="button" action>
+          <ListGroupItem tag="button" action>
             <span className='text-info'>DATABASES:</span> -MySql, MongoDB
           </ListGroupItem>
         </ListGroup>

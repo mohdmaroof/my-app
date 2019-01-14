@@ -15,3 +15,13 @@
   background: linear-gradient(to right, #26D0CE, #1A2980);
   border-color: snow;
 }
+
+button{
+  &:focus {
+    outline: none;
+  }
+}
+
+.list-style-type-circle {
+  list-style-type: circle;
+}

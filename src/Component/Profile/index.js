@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import UserProfile from '../UserProfile'
 import ProfessionalSummary from '../ProfessionalSummary'
+import ProjectList from '../ProjectList'
 
 export default class Profile extends Component {
   constructor (props) {
@@ -29,6 +30,11 @@ export default class Profile extends Component {
             <Col lg={6} md={6} sm={12}>
               <ProfessionalSummary
                 professional="Professional Summary"
+              />
+            </Col>
+            <Col lg={3} md={3} sm={12}>
+              <ProjectList
+                ProjectList='List of projects'
               />
             </Col>
           </Row>          
