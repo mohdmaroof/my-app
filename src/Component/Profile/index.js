@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import UserProfile from '../UserProfile'
-import ProfessionalSummary from '../ProfessionalSummary'
-import ProjectList from '../ProjectList'
+import { UserProfile, ProfessionalSummary, ProjectList } from '../../Component'
 
 export default class Profile extends Component {
   constructor (props) {
@@ -21,7 +19,7 @@ export default class Profile extends Component {
                 userName='Mohd Maroof'
                 softwareEngineer='Senior Software Developer'
                 company='Innoplexus Consulting Service pvt Ltd'
-                experience='experience : 6+ Years'
+                experience='6+ Years'
                 address='16-2-852 Saidabad New Malakpet Hyderabad Telangana 500059'
                 email="maroofs.md@gmail.com"
                 Phone= '+91-9616616684'

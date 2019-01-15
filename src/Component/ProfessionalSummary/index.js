@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardBody } from 'reactstrap'
 import PropTypes from 'prop-types';
-import Skills from '../Skills'
+import { Skills } from '../../Component'
 
 export default class ProfessionalSummary extends Component {
   constructor (props) {

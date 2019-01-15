@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Component/Header'
-import Profile from './Component/Profile'
+import { Header, Profile } from './Component/index'
+import './Assets/FontAwesome'
 
 class App extends Component {
   render() {

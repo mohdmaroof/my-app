@@ -11,6 +11,7 @@ import {
   DropdownItem,
   Container } from 'reactstrap';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import maroof from '../../Assets/img/maroof.jpg'
 
 class Header extends Component {
@@ -43,7 +44,7 @@ class Header extends Component {
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem>
-                        Sign Out
+                        <FontAwesomeIcon icon="sign-out-alt" /> Sign Out
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
